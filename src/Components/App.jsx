@@ -5,6 +5,8 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Error from "./Error";
+import User from "./User";
+import Search from "./Search";
 
 const App = () => {
   return (
@@ -13,7 +15,9 @@ const App = () => {
         <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="search" element={<Search />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="user/:fname/:lname" element={<User />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
