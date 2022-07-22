@@ -17,7 +17,7 @@ const User = () => {
       </h1>
       <h3>My current location is: {location.pathname}</h3>
       <br />
-      {location.pathname === "/user/Akshay/Kumbhare" ? (
+      {(location.pathname === "/user/Akshay/Kumbhare") ? 
         <button className="button-style"
           onClick={() => {
             navigate(-1);
@@ -25,7 +25,7 @@ const User = () => {
         >
           Click Me
         </button>
-      ) : null}
+       : null}
     </>
   );
 };
