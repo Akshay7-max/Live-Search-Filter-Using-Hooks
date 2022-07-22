@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import About from "./About";
@@ -19,6 +19,7 @@ const App = () => {
           <Route path="contact" element={<Contact />} />
           <Route path="user/:fname/:lname" element={<User />} />
           <Route path="*" element={<Error />} />
+          /*<Route path="*" element={<Navigate to ="/about" />}/>*/
         </Route>
       </Routes>
     </>
